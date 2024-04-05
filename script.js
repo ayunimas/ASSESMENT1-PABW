@@ -11,4 +11,9 @@ document.getElementById("Form").addEventListener("submit", function(event) {
     let jumlah = parseInt(document.getElementById("jumlah").value);
     let bukuTerpilih = document.getElementById("buku").value;
 
+    if(isNaN(jumlah) || jumlah <= 0){
+        alert("Jumlah Tidak Valid.");
+        return;
+    }
+
 });
