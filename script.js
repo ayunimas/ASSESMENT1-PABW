@@ -1,3 +1,10 @@
+let buku = [
+    {"nama" : "hp", "jumlah":2},
+    {"nama" : "fb", "jumlah":2},
+    {"nama" : "bat", "jumlah":2}
+];
+
+
 document.getElementById("Form").addEventListener("submit", function(event) {
     event.preventDefault();
 
