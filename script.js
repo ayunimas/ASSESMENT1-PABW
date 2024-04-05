@@ -4,7 +4,6 @@ let buku = [
     {"nama" : "bat", "jumlah":2}
 ];
 
-
 document.getElementById("Form").addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -27,4 +26,6 @@ document.getElementById("Form").addEventListener("submit", function(event) {
         alert("Jumlah buku tidak tersedia");
         return;
     }
+
+    alert("Silahkan ambil buku anda.");
 });
