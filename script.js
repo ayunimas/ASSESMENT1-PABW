@@ -16,4 +16,15 @@ document.getElementById("Form").addEventListener("submit", function(event) {
         return;
     }
 
+    let bukuDitemukan = buku.find(item => item.nama === bukuTerpilih);
+
+    if (!bukuDitemukan){
+        alert("Buku tidak ditemukan.");
+        return;
+    }
+
+    if (jumlah > bukuDitemukan.jumlah){
+        alert("Jumlah buku tidak tersedia");
+        return;
+    }
 });
